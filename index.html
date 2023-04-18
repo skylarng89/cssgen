@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Style Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="preview">
+            <h2>Preview area</h2>
+            <div class="box"></div>
+        </div>
+        <div class="design-area">
+            <div class="customizer">
+                <h2>Customizer</h2>
+                <form>
+                    <label for="width">Width:</label>
+                    <input type="range" id="width" min="1" max="1024" value="200">
+                    <select id="widthUnit" title="Unit">
+                        <option value="px">px</option>
+                        <option value="%">%</option>
+                        <option value="em">em</option>
+                    </select>
+                    <br>
+                    <label for="height">Height:</label>
+                    <input type="range" id="height" min="1" max="700" value="200">
+                    <select id="heightUnit" title="Unit">
+                        <option value="px">px</option>
+                        <option value="%">%</option>
+                        <option value="em">em</option>
+                    </select>
+                    <br>
+                    <label for="color">Background Color:</label>
+                    <input type="color" id="color" value="#ffbb3c">
+                    <br>
+                    <label for="shadow">Box Shadow:</label>
+                    <input type="checkbox" id="shadow">
+                    <br>
+                    <label for="radius">Border Radius:</label>
+                    <input type="range" id="radius" min="0" max="100" value="0">
+                    <select id="radiusUnit" title="Unit">
+                        <option value="px">px</option>
+                        <option value="%">%</option>
+                        <option value="em">em</option>
+                    </select>
+                    <br>
+                    <button type="button" id="generateBtn">Generate CSS</button>
+                    <button type="button" id="copyBtn">Copy CSS</button>
+                </form>
+            </div>
+            <div class="code">
+                <label for="cssCode">CSS Snippet</label>
+                <textarea id="cssCode" rows="10" cols="50" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script async src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify.min.js"
+        integrity="sha512-Go7cpbYvU1StOCxAyBeJI1ouRj3JNrAts0a4u3VqrGKhRSfzs4G0ao7ztXyK9gdz6c/jY98keIKgl/xXoEsEHQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</body>
+
+</html>

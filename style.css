@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.design-area {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 1140px;
+    height: auto;
+    padding: 1rem;
+}
+
+.box {
+    width: 200px;
+    max-width: 1240px;
+    height: 200px;
+    background-color: #ffbb3c;
+    box-shadow: none;
+}
+
+.customizer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.customizer h2 {
+    margin-bottom: 20px;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#cssCode {
+    resize: none;
+}
